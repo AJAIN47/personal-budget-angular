@@ -203,7 +203,6 @@
         var color = d3.scale.ordinal();
 
         axios.get('http://localhost:3000/budget').then(res => {
-            console.log(res);
             var data = res.data.myBudget.map(obj => {
                 return { label: obj.title, value: obj.budget, color: obj.color }
             })

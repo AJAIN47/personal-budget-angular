@@ -5,12 +5,9 @@ const port = 3000;
 
 const budget = require("./mock-data.json");
 
-console.log(budget);
-
 app.use(cors());
 
 app.get('/budget', (req, res) => {
-    console.log(budget);
     res.json(budget);
 });
 
